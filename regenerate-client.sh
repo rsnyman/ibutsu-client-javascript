@@ -10,19 +10,16 @@ CAN_DELETE=false
 CURRENT_VERSION=`cat package.json | grep 'version' | cut -d\" -f4`
 NEW_VERSION="${CURRENT_VERSION%.*}.$((${CURRENT_VERSION##*.}+1))"
 TRAVIS_DIFF='diff --git a/.travis.yml b/.travis.yml
-index 40dc5f2..0955ce2 100644
+index 0968f7a..db4dc1d 100644
 --- a/.travis.yml
 +++ b/.travis.yml
-@@ -2,9 +2,6 @@
- language: python
- python:
-   - "2.7"
--  - "3.2"
--  - "3.3"
--  - "3.4"
-   - "3.5"
-   - "3.6"
-   - "3.7"
+@@ -1,5 +1,4 @@
+ language: node_js
+ cache: npm
+ node_js:
+-  - "6"
+-  - "6.1"
++  - "node"
 '
 
 function print_usage() {
@@ -87,13 +84,8 @@ fi
 echo "done"
 
 # Modify various files
-# cat <<EOF >> /tmp/client/.gitignore
-# 
-# Virtual environment
-# .ibutsu-env
-# EOF
 rm /tmp/client/git_push.sh
-# echo "$TRAVIS_DIFF" | patch -p 1 -d /tmp/client
+echo "$TRAVIS_DIFF" | patch -p 1 -d /tmp/client
 
 # Copy all the files
 find $CLIENT_DIR -not -path $CLIENT_DIR -not -path "$CLIENT_DIR/.git/*" -not -name '.git' \
