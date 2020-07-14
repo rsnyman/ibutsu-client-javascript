@@ -1,4 +1,4 @@
-# @IbutsuClient.ReportList
+# ibutsu.ReportList
 
 ## Properties
 

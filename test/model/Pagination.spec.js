@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@IbutsuClient);
+    factory(root.expect, root.ibutsu);
   }
-}(this, function(expect, @IbutsuClient) {
+}(this, function(expect, ibutsu) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @IbutsuClient.Pagination();
+    instance = new ibutsu.Pagination();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('Pagination', function() {
     it('should create an instance of Pagination', function() {
       // uncomment below and update the code to test Pagination
-      //var instane = new @IbutsuClient.Pagination();
-      //expect(instance).to.be.a(@IbutsuClient.Pagination);
+      //var instane = new ibutsu.Pagination();
+      //expect(instance).to.be.a(ibutsu.Pagination);
     });
 
     it('should have the property page (base name: "page")', function() {
       // uncomment below and update the code to test the property page
-      //var instane = new @IbutsuClient.Pagination();
+      //var instane = new ibutsu.Pagination();
       //expect(instance).to.be();
     });
 
     it('should have the property pageSize (base name: "pageSize")', function() {
       // uncomment below and update the code to test the property pageSize
-      //var instane = new @IbutsuClient.Pagination();
+      //var instane = new ibutsu.Pagination();
       //expect(instance).to.be();
     });
 
     it('should have the property totalPages (base name: "totalPages")', function() {
       // uncomment below and update the code to test the property totalPages
-      //var instane = new @IbutsuClient.Pagination();
+      //var instane = new ibutsu.Pagination();
       //expect(instance).to.be();
     });
 
     it('should have the property totalItems (base name: "totalItems")', function() {
       // uncomment below and update the code to test the property totalItems
-      //var instane = new @IbutsuClient.Pagination();
+      //var instane = new ibutsu.Pagination();
       //expect(instance).to.be();
     });
 

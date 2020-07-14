@@ -1,4 +1,4 @@
-# @IbutsuClient.HealthInfo
+# ibutsu.HealthInfo
 
 ## Properties
 

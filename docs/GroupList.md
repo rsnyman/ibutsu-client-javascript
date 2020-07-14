@@ -1,4 +1,4 @@
-# @IbutsuClient.GroupList
+# ibutsu.GroupList
 
 ## Properties
 

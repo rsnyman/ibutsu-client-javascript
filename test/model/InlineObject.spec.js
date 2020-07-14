@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@IbutsuClient);
+    factory(root.expect, root.ibutsu);
   }
-}(this, function(expect, @IbutsuClient) {
+}(this, function(expect, ibutsu) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @IbutsuClient.InlineObject();
+    instance = new ibutsu.InlineObject();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('InlineObject', function() {
     it('should create an instance of InlineObject', function() {
       // uncomment below and update the code to test InlineObject
-      //var instane = new @IbutsuClient.InlineObject();
-      //expect(instance).to.be.a(@IbutsuClient.InlineObject);
+      //var instane = new ibutsu.InlineObject();
+      //expect(instance).to.be.a(ibutsu.InlineObject);
     });
 
     it('should have the property resultId (base name: "resultId")', function() {
       // uncomment below and update the code to test the property resultId
-      //var instane = new @IbutsuClient.InlineObject();
+      //var instane = new ibutsu.InlineObject();
       //expect(instance).to.be();
     });
 
     it('should have the property filename (base name: "filename")', function() {
       // uncomment below and update the code to test the property filename
-      //var instane = new @IbutsuClient.InlineObject();
+      //var instane = new ibutsu.InlineObject();
       //expect(instance).to.be();
     });
 
     it('should have the property file (base name: "file")', function() {
       // uncomment below and update the code to test the property file
-      //var instane = new @IbutsuClient.InlineObject();
+      //var instane = new ibutsu.InlineObject();
       //expect(instance).to.be();
     });
 
     it('should have the property additionalMetadata (base name: "additionalMetadata")', function() {
       // uncomment below and update the code to test the property additionalMetadata
-      //var instane = new @IbutsuClient.InlineObject();
+      //var instane = new ibutsu.InlineObject();
       //expect(instance).to.be();
     });
 

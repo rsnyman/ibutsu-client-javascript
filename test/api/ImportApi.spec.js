@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@IbutsuClient);
+    factory(root.expect, root.ibutsu);
   }
-}(this, function(expect, @IbutsuClient) {
+}(this, function(expect, ibutsu) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @IbutsuClient.ImportApi();
+    instance = new ibutsu.ImportApi();
   });
 
   var getProperty = function(object, getter, property) {

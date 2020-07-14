@@ -1,4 +1,4 @@
-# @IbutsuClient.Pagination
+# ibutsu.Pagination
 
 ## Properties
 

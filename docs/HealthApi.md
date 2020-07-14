@@ -1,4 +1,4 @@
-# @IbutsuClient.HealthApi
+# ibutsu.HealthApi
 
 All URIs are relative to *http://localhost/api*
 
@@ -19,9 +19,9 @@ Get a health report for the database
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.HealthApi();
+let apiInstance = new ibutsu.HealthApi();
 apiInstance.getDatabaseHealth().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -57,9 +57,9 @@ Get a general health report
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.HealthApi();
+let apiInstance = new ibutsu.HealthApi();
 apiInstance.getHealth().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -95,9 +95,9 @@ Get information about the server
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.HealthApi();
+let apiInstance = new ibutsu.HealthApi();
 apiInstance.getHealthInfo().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {

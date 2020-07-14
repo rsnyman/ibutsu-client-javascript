@@ -19,7 +19,7 @@ import GroupList from '../model/GroupList';
 /**
 * Group service.
 * @module api/GroupApi
-* @version 0.1
+* @version 1.0.0
 */
 export default class GroupApi {
 

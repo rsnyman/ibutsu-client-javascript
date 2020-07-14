@@ -18,7 +18,7 @@ import Result from './Result';
 /**
  * The ResultList model module.
  * @module model/ResultList
- * @version 0.1
+ * @version 1.0.0
  */
 class ResultList {
     /**

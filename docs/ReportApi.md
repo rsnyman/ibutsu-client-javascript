@@ -1,4 +1,4 @@
-# @IbutsuClient.ReportApi
+# ibutsu.ReportApi
 
 All URIs are relative to *http://localhost/api*
 
@@ -23,10 +23,10 @@ Create a new report
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.ReportApi();
-let reportParameters = new @IbutsuClient.ReportParameters(); // ReportParameters | The parameters for the report
+let apiInstance = new ibutsu.ReportApi();
+let reportParameters = new ibutsu.ReportParameters(); // ReportParameters | The parameters for the report
 apiInstance.addReport(reportParameters).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -65,9 +65,9 @@ Delete a report
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.ReportApi();
+let apiInstance = new ibutsu.ReportApi();
 let id = "id_example"; // String | ID of report to delete
 apiInstance.deleteReport(id).then(() => {
   console.log('API called successfully.');
@@ -107,9 +107,9 @@ Download a report
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.ReportApi();
+let apiInstance = new ibutsu.ReportApi();
 let id = "id_example"; // String | The ID of the report
 let filename = "filename_example"; // String | The file name of the downloadable report
 apiInstance.downloadReport(id, filename).then((data) => {
@@ -151,9 +151,9 @@ Get a report
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.ReportApi();
+let apiInstance = new ibutsu.ReportApi();
 let id = "id_example"; // String | The ID of the report
 apiInstance.getReport(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -193,9 +193,9 @@ Get a list of reports
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.ReportApi();
+let apiInstance = new ibutsu.ReportApi();
 let opts = {
   'page': 56, // Number | Set the page of items to return, defaults to 1
   'pageSize': 56, // Number | Set the number of items per page, defaults to 25
@@ -241,9 +241,9 @@ Get a list of report types
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.ReportApi();
+let apiInstance = new ibutsu.ReportApi();
 apiInstance.getReportTypes().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -279,9 +279,9 @@ View a report
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.ReportApi();
+let apiInstance = new ibutsu.ReportApi();
 let id = "id_example"; // String | The ID of the report
 let filename = "filename_example"; // String | The file name of the downloadable report
 apiInstance.viewReport(id, filename).then((data) => {

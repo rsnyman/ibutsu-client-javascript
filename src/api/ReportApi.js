@@ -21,7 +21,7 @@ import ReportParameters from '../model/ReportParameters';
 /**
 * Report service.
 * @module api/ReportApi
-* @version 0.1
+* @version 1.0.0
 */
 export default class ReportApi {
 

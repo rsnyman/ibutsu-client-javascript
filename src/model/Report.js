@@ -17,7 +17,7 @@ import ReportParameters from './ReportParameters';
 /**
  * The Report model module.
  * @module model/Report
- * @version 0.1
+ * @version 1.0.0
  */
 class Report {
     /**

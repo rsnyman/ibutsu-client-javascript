@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@IbutsuClient);
+    factory(root.expect, root.ibutsu);
   }
-}(this, function(expect, @IbutsuClient) {
+}(this, function(expect, ibutsu) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @IbutsuClient.ResultList();
+    instance = new ibutsu.ResultList();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('ResultList', function() {
     it('should create an instance of ResultList', function() {
       // uncomment below and update the code to test ResultList
-      //var instane = new @IbutsuClient.ResultList();
-      //expect(instance).to.be.a(@IbutsuClient.ResultList);
+      //var instane = new ibutsu.ResultList();
+      //expect(instance).to.be.a(ibutsu.ResultList);
     });
 
     it('should have the property results (base name: "results")', function() {
       // uncomment below and update the code to test the property results
-      //var instane = new @IbutsuClient.ResultList();
+      //var instane = new ibutsu.ResultList();
       //expect(instance).to.be();
     });
 
     it('should have the property pagination (base name: "pagination")', function() {
       // uncomment below and update the code to test the property pagination
-      //var instane = new @IbutsuClient.ResultList();
+      //var instane = new ibutsu.ResultList();
       //expect(instance).to.be();
     });
 

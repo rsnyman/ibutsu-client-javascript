@@ -1,4 +1,4 @@
-# @IbutsuClient.RunApi
+# ibutsu.RunApi
 
 All URIs are relative to *http://localhost/api*
 
@@ -20,11 +20,11 @@ Create a run
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.RunApi();
+let apiInstance = new ibutsu.RunApi();
 let opts = {
-  'run': new @IbutsuClient.Run() // Run | Run item
+  'run': new ibutsu.Run() // Run | Run item
 };
 apiInstance.addRun(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -64,9 +64,9 @@ Get a single run by ID
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.RunApi();
+let apiInstance = new ibutsu.RunApi();
 let id = "id_example"; // String | ID of test run
 apiInstance.getRun(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -108,9 +108,9 @@ The &#x60;filter&#x60; parameter takes a list of filters to apply in the form of
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.RunApi();
+let apiInstance = new ibutsu.RunApi();
 let opts = {
   'filter': ["null"], // [String] | Fields to filter by
   'page': 56, // Number | Set the page of items to return, defaults to 1
@@ -156,11 +156,11 @@ Update a single run
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.RunApi();
+let apiInstance = new ibutsu.RunApi();
 let id = "id_example"; // String | ID of the test run
-let run = new @IbutsuClient.Run(); // Run | The updated test run
+let run = new ibutsu.Run(); // Run | The updated test run
 apiInstance.updateRun(id, run).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {

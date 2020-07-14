@@ -18,7 +18,7 @@ import Pagination from './Pagination';
 /**
  * The GroupList model module.
  * @module model/GroupList
- * @version 0.1
+ * @version 1.0.0
  */
 class GroupList {
     /**

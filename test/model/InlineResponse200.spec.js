@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@IbutsuClient);
+    factory(root.expect, root.ibutsu);
   }
-}(this, function(expect, @IbutsuClient) {
+}(this, function(expect, ibutsu) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @IbutsuClient.InlineResponse200();
+    instance = new ibutsu.InlineResponse200();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('InlineResponse200', function() {
     it('should create an instance of InlineResponse200', function() {
       // uncomment below and update the code to test InlineResponse200
-      //var instane = new @IbutsuClient.InlineResponse200();
-      //expect(instance).to.be.a(@IbutsuClient.InlineResponse200);
+      //var instane = new ibutsu.InlineResponse200();
+      //expect(instance).to.be.a(ibutsu.InlineResponse200);
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instane = new @IbutsuClient.InlineResponse200();
+      //var instane = new ibutsu.InlineResponse200();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new @IbutsuClient.InlineResponse200();
+      //var instane = new ibutsu.InlineResponse200();
       //expect(instance).to.be();
     });
 

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@IbutsuClient);
+    factory(root.expect, root.ibutsu);
   }
-}(this, function(expect, @IbutsuClient) {
+}(this, function(expect, ibutsu) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @IbutsuClient.Project();
+    instance = new ibutsu.Project();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('Project', function() {
     it('should create an instance of Project', function() {
       // uncomment below and update the code to test Project
-      //var instane = new @IbutsuClient.Project();
-      //expect(instance).to.be.a(@IbutsuClient.Project);
+      //var instane = new ibutsu.Project();
+      //expect(instance).to.be.a(ibutsu.Project);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @IbutsuClient.Project();
+      //var instane = new ibutsu.Project();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new @IbutsuClient.Project();
+      //var instane = new ibutsu.Project();
       //expect(instance).to.be();
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instane = new @IbutsuClient.Project();
+      //var instane = new ibutsu.Project();
       //expect(instance).to.be();
     });
 
     it('should have the property ownerId (base name: "ownerId")', function() {
       // uncomment below and update the code to test the property ownerId
-      //var instane = new @IbutsuClient.Project();
+      //var instane = new ibutsu.Project();
       //expect(instance).to.be();
     });
 
     it('should have the property groupId (base name: "groupId")', function() {
       // uncomment below and update the code to test the property groupId
-      //var instane = new @IbutsuClient.Project();
+      //var instane = new ibutsu.Project();
       //expect(instance).to.be();
     });
 

@@ -1,4 +1,4 @@
-# @IbutsuClient.Result
+# ibutsu.Result
 
 ## Properties
 

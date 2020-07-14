@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The WidgetParam model module.
  * @module model/WidgetParam
- * @version 0.1
+ * @version 1.0.0
  */
 class WidgetParam {
     /**

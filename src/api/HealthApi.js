@@ -19,7 +19,7 @@ import HealthInfo from '../model/HealthInfo';
 /**
 * Health service.
 * @module api/HealthApi
-* @version 0.1
+* @version 1.0.0
 */
 export default class HealthApi {
 

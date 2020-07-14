@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Result model module.
  * @module model/Result
- * @version 0.1
+ * @version 1.0.0
  */
 class Result {
     /**

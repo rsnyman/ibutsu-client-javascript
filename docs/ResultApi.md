@@ -1,4 +1,4 @@
-# @IbutsuClient.ResultApi
+# ibutsu.ResultApi
 
 All URIs are relative to *http://localhost/api*
 
@@ -20,11 +20,11 @@ Create a test result
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.ResultApi();
+let apiInstance = new ibutsu.ResultApi();
 let opts = {
-  'result': new @IbutsuClient.Result() // Result | Result item
+  'result': new ibutsu.Result() // Result | Result item
 };
 apiInstance.addResult(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -64,9 +64,9 @@ Get a single result
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.ResultApi();
+let apiInstance = new ibutsu.ResultApi();
 let id = "id_example"; // String | ID of pet to return
 apiInstance.getResult(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -108,9 +108,9 @@ The &#x60;filter&#x60; parameter takes a list of filters to apply in the form of
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.ResultApi();
+let apiInstance = new ibutsu.ResultApi();
 let opts = {
   'filter': ["null"], // [String] | Fields to filter by
   'applyMax': true, // Boolean | Use a max to limit documents returned
@@ -158,12 +158,12 @@ Updates a single result
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.ResultApi();
+let apiInstance = new ibutsu.ResultApi();
 let id = "id_example"; // String | ID of result to update
 let opts = {
-  'result': new @IbutsuClient.Result() // Result | Result item
+  'result': new ibutsu.Result() // Result | Result item
 };
 apiInstance.updateResult(id, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

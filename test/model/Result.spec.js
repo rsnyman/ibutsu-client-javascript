@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@IbutsuClient);
+    factory(root.expect, root.ibutsu);
   }
-}(this, function(expect, @IbutsuClient) {
+}(this, function(expect, ibutsu) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @IbutsuClient.Result();
+    instance = new ibutsu.Result();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,55 +50,55 @@
   describe('Result', function() {
     it('should create an instance of Result', function() {
       // uncomment below and update the code to test Result
-      //var instane = new @IbutsuClient.Result();
-      //expect(instance).to.be.a(@IbutsuClient.Result);
+      //var instane = new ibutsu.Result();
+      //expect(instance).to.be.a(ibutsu.Result);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @IbutsuClient.Result();
+      //var instane = new ibutsu.Result();
       //expect(instance).to.be();
     });
 
     it('should have the property testId (base name: "test_id")', function() {
       // uncomment below and update the code to test the property testId
-      //var instane = new @IbutsuClient.Result();
+      //var instane = new ibutsu.Result();
       //expect(instance).to.be();
     });
 
     it('should have the property startTime (base name: "start_time")', function() {
       // uncomment below and update the code to test the property startTime
-      //var instane = new @IbutsuClient.Result();
+      //var instane = new ibutsu.Result();
       //expect(instance).to.be();
     });
 
     it('should have the property duration (base name: "duration")', function() {
       // uncomment below and update the code to test the property duration
-      //var instane = new @IbutsuClient.Result();
+      //var instane = new ibutsu.Result();
       //expect(instance).to.be();
     });
 
     it('should have the property result (base name: "result")', function() {
       // uncomment below and update the code to test the property result
-      //var instane = new @IbutsuClient.Result();
+      //var instane = new ibutsu.Result();
       //expect(instance).to.be();
     });
 
     it('should have the property metadata (base name: "metadata")', function() {
       // uncomment below and update the code to test the property metadata
-      //var instane = new @IbutsuClient.Result();
+      //var instane = new ibutsu.Result();
       //expect(instance).to.be();
     });
 
     it('should have the property params (base name: "params")', function() {
       // uncomment below and update the code to test the property params
-      //var instane = new @IbutsuClient.Result();
+      //var instane = new ibutsu.Result();
       //expect(instance).to.be();
     });
 
     it('should have the property source (base name: "source")', function() {
       // uncomment below and update the code to test the property source
-      //var instane = new @IbutsuClient.Result();
+      //var instane = new ibutsu.Result();
       //expect(instance).to.be();
     });
 

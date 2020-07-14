@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@IbutsuClient);
+    factory(root.expect, root.ibutsu);
   }
-}(this, function(expect, @IbutsuClient) {
+}(this, function(expect, ibutsu) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @IbutsuClient.Group();
+    instance = new ibutsu.Group();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('Group', function() {
     it('should create an instance of Group', function() {
       // uncomment below and update the code to test Group
-      //var instane = new @IbutsuClient.Group();
-      //expect(instance).to.be.a(@IbutsuClient.Group);
+      //var instane = new ibutsu.Group();
+      //expect(instance).to.be.a(ibutsu.Group);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @IbutsuClient.Group();
+      //var instane = new ibutsu.Group();
       //expect(instance).to.be();
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new @IbutsuClient.Group();
+      //var instane = new ibutsu.Group();
       //expect(instance).to.be();
     });
 

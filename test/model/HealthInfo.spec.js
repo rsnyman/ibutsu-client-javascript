@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@IbutsuClient);
+    factory(root.expect, root.ibutsu);
   }
-}(this, function(expect, @IbutsuClient) {
+}(this, function(expect, ibutsu) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @IbutsuClient.HealthInfo();
+    instance = new ibutsu.HealthInfo();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('HealthInfo', function() {
     it('should create an instance of HealthInfo', function() {
       // uncomment below and update the code to test HealthInfo
-      //var instane = new @IbutsuClient.HealthInfo();
-      //expect(instance).to.be.a(@IbutsuClient.HealthInfo);
+      //var instane = new ibutsu.HealthInfo();
+      //expect(instance).to.be.a(ibutsu.HealthInfo);
     });
 
     it('should have the property frontend (base name: "frontend")', function() {
       // uncomment below and update the code to test the property frontend
-      //var instane = new @IbutsuClient.HealthInfo();
+      //var instane = new ibutsu.HealthInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property backend (base name: "backend")', function() {
       // uncomment below and update the code to test the property backend
-      //var instane = new @IbutsuClient.HealthInfo();
+      //var instane = new ibutsu.HealthInfo();
       //expect(instance).to.be();
     });
 
     it('should have the property apiUi (base name: "api_ui")', function() {
       // uncomment below and update the code to test the property apiUi
-      //var instane = new @IbutsuClient.HealthInfo();
+      //var instane = new ibutsu.HealthInfo();
       //expect(instance).to.be();
     });
 

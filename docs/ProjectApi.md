@@ -1,4 +1,4 @@
-# @IbutsuClient.ProjectApi
+# ibutsu.ProjectApi
 
 All URIs are relative to *http://localhost/api*
 
@@ -20,10 +20,10 @@ Create a project
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.ProjectApi();
-let project = new @IbutsuClient.Project(); // Project | Project
+let apiInstance = new ibutsu.ProjectApi();
+let project = new ibutsu.Project(); // Project | Project
 apiInstance.addProject(project).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -62,9 +62,9 @@ Get a single project by ID
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.ProjectApi();
+let apiInstance = new ibutsu.ProjectApi();
 let id = "id_example"; // String | ID of test project
 apiInstance.getProject(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -104,9 +104,9 @@ Get a list of projects
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.ProjectApi();
+let apiInstance = new ibutsu.ProjectApi();
 let opts = {
   'ownerId': "ownerId_example", // String | Filter projects by owner ID
   'groupId': "groupId_example", // String | Filter projects by group ID
@@ -154,12 +154,12 @@ Update a project
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.ProjectApi();
+let apiInstance = new ibutsu.ProjectApi();
 let id = "id_example"; // String | ID of test project
 let opts = {
-  'project': new @IbutsuClient.Project() // Project | Project
+  'project': new ibutsu.Project() // Project | Project
 };
 apiInstance.updateProject(id, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

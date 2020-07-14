@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Artifact model module.
  * @module model/Artifact
- * @version 0.1
+ * @version 1.0.0
  */
 class Artifact {
     /**

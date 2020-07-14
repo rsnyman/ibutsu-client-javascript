@@ -21,6 +21,22 @@ index 0968f7a..db4dc1d 100644
 -  - "6.1"
 +  - "node"
 '
+PACKAGE_DIFF='diff --git a/package.json b/package.json
+index e8693bd..8330349 100644
+--- a/package.json
++++ b/package.json
+@@ -9,6 +9,10 @@
+     "prepack": "npm run build",
+     "test": "mocha --require @babel/register --recursive"
+   },
++  "repository": {
++    "type": "git",
++    "url": "https://github.com/ibutsu/ibutsu-client-javascript.git"
++  },
+   "browser": {
+     "fs": false
+   },
+'
 
 function print_usage() {
     echo "Usage: regenerate-client.sh [-h|--help] [-c|--commit] [-p|--push] [-d|--delete] OPENAPI_FILE"
@@ -70,12 +86,15 @@ if [[ ! -x "$(command -v openapi-generator-cli)" ]]; then
     exit 2
 fi
 
+# Clean up the current directory
+rm -fr node_modules
+
 # Generate the client
 echo -n "Generating client..."
 openapi-generator-cli generate -o /tmp/client -g javascript --package-name @ibutsu/client \
-    -p licenseName=MIT -p projectVersion=0.1 -p projectName=@ibutsu/client \
+    -p licenseName=MIT -p projectVersion=1.0.0  -p projectName=@ibutsu/client \
     -p projectDescription="A Javascript client for the Ibutsu API" -p usePromises=true \
-    -i $OPENAPI_FILE > $CLIENT_DIR/generate.log 2>&1
+    -p moduleName=ibutsu -i $OPENAPI_FILE > $CLIENT_DIR/generate.log 2>&1
 if [ $? -ne 0 ]; then
     echo "error"
     echo "Error: Generating client failed. Please see generate.log for errors"
@@ -86,10 +105,12 @@ echo "done"
 # Modify various files
 rm /tmp/client/git_push.sh
 echo "$TRAVIS_DIFF" | patch -p 1 -d /tmp/client
+echo "$PACKAGE_DIFF" | patch -p 1 -d /tmp/client
 
 # Copy all the files
 find $CLIENT_DIR -not -path $CLIENT_DIR -not -path "$CLIENT_DIR/.git/*" -not -name '.git' \
-    -not -name 'regenerate-client.sh' -not -name 'LICENSE' -exec rm -fr {} +
+    -not -name 'regenerate-client.sh' -not -name 'LICENSE' -not -name '.gitignore' \
+    -not -name 'npm-publish.yml' -not -path '.github' -exec rm -fr {} +
 cp -r /tmp/client/. $CLIENT_DIR
 
 # Clean up afterward

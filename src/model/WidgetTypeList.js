@@ -18,7 +18,7 @@ import WidgetType from './WidgetType';
 /**
  * The WidgetTypeList model module.
  * @module model/WidgetTypeList
- * @version 0.1
+ * @version 1.0.0
  */
 class WidgetTypeList {
     /**

@@ -19,7 +19,7 @@ import ResultList from '../model/ResultList';
 /**
 * Result service.
 * @module api/ResultApi
-* @version 0.1
+* @version 1.0.0
 */
 export default class ResultApi {
 

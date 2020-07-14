@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@IbutsuClient);
+    factory(root.expect, root.ibutsu);
   }
-}(this, function(expect, @IbutsuClient) {
+}(this, function(expect, ibutsu) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @IbutsuClient.RunList();
+    instance = new ibutsu.RunList();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('RunList', function() {
     it('should create an instance of RunList', function() {
       // uncomment below and update the code to test RunList
-      //var instane = new @IbutsuClient.RunList();
-      //expect(instance).to.be.a(@IbutsuClient.RunList);
+      //var instane = new ibutsu.RunList();
+      //expect(instance).to.be.a(ibutsu.RunList);
     });
 
     it('should have the property runs (base name: "runs")', function() {
       // uncomment below and update the code to test the property runs
-      //var instane = new @IbutsuClient.RunList();
+      //var instane = new ibutsu.RunList();
       //expect(instance).to.be();
     });
 
     it('should have the property pagination (base name: "pagination")', function() {
       // uncomment below and update the code to test the property pagination
-      //var instane = new @IbutsuClient.RunList();
+      //var instane = new ibutsu.RunList();
       //expect(instance).to.be();
     });
 

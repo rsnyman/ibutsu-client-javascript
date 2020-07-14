@@ -1,4 +1,4 @@
-# @IbutsuClient.InlineObject
+# ibutsu.InlineObject
 
 ## Properties
 

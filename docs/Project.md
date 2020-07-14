@@ -1,4 +1,4 @@
-# @IbutsuClient.Project
+# ibutsu.Project
 
 ## Properties
 

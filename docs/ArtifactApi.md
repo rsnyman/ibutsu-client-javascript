@@ -1,4 +1,4 @@
-# @IbutsuClient.ArtifactApi
+# ibutsu.ArtifactApi
 
 All URIs are relative to *http://localhost/api*
 
@@ -22,9 +22,9 @@ Delete an artifact
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.ArtifactApi();
+let apiInstance = new ibutsu.ArtifactApi();
 let id = "id_example"; // String | ID of artifact to delete
 apiInstance.deleteArtifact(id).then(() => {
   console.log('API called successfully.');
@@ -64,9 +64,9 @@ Download an artifact
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.ArtifactApi();
+let apiInstance = new ibutsu.ArtifactApi();
 let id = "id_example"; // String | ID of artifact to return
 apiInstance.downloadArtifact(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -106,9 +106,9 @@ Get a single artifact
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.ArtifactApi();
+let apiInstance = new ibutsu.ArtifactApi();
 let id = "id_example"; // String | ID of artifact to return
 apiInstance.getArtifact(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -148,9 +148,9 @@ Get a (filtered) list of artifacts
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.ArtifactApi();
+let apiInstance = new ibutsu.ArtifactApi();
 let opts = {
   'resultId': "resultId_example", // String | The result ID to filter by
   'page': 56, // Number | Set the page of items to return, defaults to 1
@@ -196,9 +196,9 @@ Uploads a test run artifact
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.ArtifactApi();
+let apiInstance = new ibutsu.ArtifactApi();
 let resultId = "resultId_example"; // String | ID of result to attach artifact to
 let filename = "filename_example"; // String | ID of pet to update
 let file = "/path/to/file"; // File | file to upload
@@ -246,9 +246,9 @@ Stream an artifact directly to the client/browser
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.ArtifactApi();
+let apiInstance = new ibutsu.ArtifactApi();
 let id = "id_example"; // String | ID of artifact to return
 apiInstance.viewArtifact(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

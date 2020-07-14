@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@IbutsuClient);
+    factory(root.expect, root.ibutsu);
   }
-}(this, function(expect, @IbutsuClient) {
+}(this, function(expect, ibutsu) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @IbutsuClient.Health();
+    instance = new ibutsu.Health();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('Health', function() {
     it('should create an instance of Health', function() {
       // uncomment below and update the code to test Health
-      //var instane = new @IbutsuClient.Health();
-      //expect(instance).to.be.a(@IbutsuClient.Health);
+      //var instane = new ibutsu.Health();
+      //expect(instance).to.be.a(ibutsu.Health);
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instane = new @IbutsuClient.Health();
+      //var instane = new ibutsu.Health();
       //expect(instance).to.be();
     });
 
     it('should have the property message (base name: "message")', function() {
       // uncomment below and update the code to test the property message
-      //var instane = new @IbutsuClient.Health();
+      //var instane = new ibutsu.Health();
       //expect(instance).to.be();
     });
 

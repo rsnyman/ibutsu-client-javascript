@@ -18,7 +18,7 @@ import Pagination from './Pagination';
 /**
  * The ArtifactList model module.
  * @module model/ArtifactList
- * @version 0.1
+ * @version 1.0.0
  */
 class ArtifactList {
     /**

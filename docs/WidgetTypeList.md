@@ -1,4 +1,4 @@
-# @IbutsuClient.WidgetTypeList
+# ibutsu.WidgetTypeList
 
 ## Properties
 

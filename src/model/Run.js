@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Run model module.
  * @module model/Run
- * @version 0.1
+ * @version 1.0.0
  */
 class Run {
     /**

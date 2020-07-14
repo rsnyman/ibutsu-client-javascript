@@ -1,4 +1,4 @@
-# @IbutsuClient.RunList
+# ibutsu.RunList
 
 ## Properties
 

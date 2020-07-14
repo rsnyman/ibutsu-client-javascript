@@ -18,7 +18,7 @@ import Project from './Project';
 /**
  * The ProjectList model module.
  * @module model/ProjectList
- * @version 0.1
+ * @version 1.0.0
  */
 class ProjectList {
     /**

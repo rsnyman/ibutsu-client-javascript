@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@IbutsuClient);
+    factory(root.expect, root.ibutsu);
   }
-}(this, function(expect, @IbutsuClient) {
+}(this, function(expect, ibutsu) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @IbutsuClient.WidgetParam();
+    instance = new ibutsu.WidgetParam();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('WidgetParam', function() {
     it('should create an instance of WidgetParam', function() {
       // uncomment below and update the code to test WidgetParam
-      //var instane = new @IbutsuClient.WidgetParam();
-      //expect(instance).to.be.a(@IbutsuClient.WidgetParam);
+      //var instane = new ibutsu.WidgetParam();
+      //expect(instance).to.be.a(ibutsu.WidgetParam);
     });
 
     it('should have the property name (base name: "name")', function() {
       // uncomment below and update the code to test the property name
-      //var instane = new @IbutsuClient.WidgetParam();
+      //var instane = new ibutsu.WidgetParam();
       //expect(instance).to.be();
     });
 
     it('should have the property description (base name: "description")', function() {
       // uncomment below and update the code to test the property description
-      //var instane = new @IbutsuClient.WidgetParam();
+      //var instane = new ibutsu.WidgetParam();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instane = new @IbutsuClient.WidgetParam();
+      //var instane = new ibutsu.WidgetParam();
       //expect(instance).to.be();
     });
 

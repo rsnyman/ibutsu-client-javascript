@@ -19,7 +19,7 @@ import ArtifactList from '../model/ArtifactList';
 /**
 * Artifact service.
 * @module api/ArtifactApi
-* @version 0.1
+* @version 1.0.0
 */
 export default class ArtifactApi {
 

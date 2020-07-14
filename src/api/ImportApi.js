@@ -18,7 +18,7 @@ import ModelImport from '../model/ModelImport';
 /**
 * Import service.
 * @module api/ImportApi
-* @version 0.1
+* @version 1.0.0
 */
 export default class ImportApi {
 

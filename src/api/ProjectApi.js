@@ -19,7 +19,7 @@ import ProjectList from '../model/ProjectList';
 /**
 * Project service.
 * @module api/ProjectApi
-* @version 0.1
+* @version 1.0.0
 */
 export default class ProjectApi {
 

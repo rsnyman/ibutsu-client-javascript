@@ -1,4 +1,4 @@
-# @IbutsuClient.WidgetApi
+# ibutsu.WidgetApi
 
 All URIs are relative to *http://localhost/api*
 
@@ -18,9 +18,9 @@ Generate data for a dashboard widget
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.WidgetApi();
+let apiInstance = new ibutsu.WidgetApi();
 let id = "id_example"; // String | The widget identifier
 let opts = {
   'params': null // Object | The parameters for the widget
@@ -64,9 +64,9 @@ Get a list of widget types
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.WidgetApi();
+let apiInstance = new ibutsu.WidgetApi();
 apiInstance.getWidgetTypes().then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {

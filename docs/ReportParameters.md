@@ -1,4 +1,4 @@
-# @IbutsuClient.ReportParameters
+# ibutsu.ReportParameters
 
 ## Properties
 

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@IbutsuClient);
+    factory(root.expect, root.ibutsu);
   }
-}(this, function(expect, @IbutsuClient) {
+}(this, function(expect, ibutsu) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @IbutsuClient.Run();
+    instance = new ibutsu.Run();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,49 +50,49 @@
   describe('Run', function() {
     it('should create an instance of Run', function() {
       // uncomment below and update the code to test Run
-      //var instane = new @IbutsuClient.Run();
-      //expect(instance).to.be.a(@IbutsuClient.Run);
+      //var instane = new ibutsu.Run();
+      //expect(instance).to.be.a(ibutsu.Run);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @IbutsuClient.Run();
+      //var instane = new ibutsu.Run();
       //expect(instance).to.be();
     });
 
     it('should have the property created (base name: "created")', function() {
       // uncomment below and update the code to test the property created
-      //var instane = new @IbutsuClient.Run();
+      //var instane = new ibutsu.Run();
       //expect(instance).to.be();
     });
 
     it('should have the property duration (base name: "duration")', function() {
       // uncomment below and update the code to test the property duration
-      //var instane = new @IbutsuClient.Run();
+      //var instane = new ibutsu.Run();
       //expect(instance).to.be();
     });
 
     it('should have the property source (base name: "source")', function() {
       // uncomment below and update the code to test the property source
-      //var instane = new @IbutsuClient.Run();
+      //var instane = new ibutsu.Run();
       //expect(instance).to.be();
     });
 
     it('should have the property startTime (base name: "start_time")', function() {
       // uncomment below and update the code to test the property startTime
-      //var instane = new @IbutsuClient.Run();
+      //var instane = new ibutsu.Run();
       //expect(instance).to.be();
     });
 
     it('should have the property summary (base name: "summary")', function() {
       // uncomment below and update the code to test the property summary
-      //var instane = new @IbutsuClient.Run();
+      //var instane = new ibutsu.Run();
       //expect(instance).to.be();
     });
 
     it('should have the property metadata (base name: "metadata")', function() {
       // uncomment below and update the code to test the property metadata
-      //var instane = new @IbutsuClient.Run();
+      //var instane = new ibutsu.Run();
       //expect(instance).to.be();
     });
 

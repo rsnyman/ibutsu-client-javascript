@@ -18,7 +18,7 @@ import WidgetConfig from './WidgetConfig';
 /**
  * The WidgetConfigList model module.
  * @module model/WidgetConfigList
- * @version 0.1
+ * @version 1.0.0
  */
 class WidgetConfigList {
     /**

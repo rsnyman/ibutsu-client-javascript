@@ -19,7 +19,7 @@ import RunList from '../model/RunList';
 /**
 * Run service.
 * @module api/RunApi
-* @version 0.1
+* @version 1.0.0
 */
 export default class RunApi {
 
