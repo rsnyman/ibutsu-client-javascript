@@ -1,4 +1,4 @@
-# @IbutsuClient.ArtifactList
+# ibutsu.ArtifactList
 
 ## Properties
 

@@ -1,4 +1,4 @@
-# @IbutsuClient.WidgetConfigApi
+# ibutsu.WidgetConfigApi
 
 All URIs are relative to *http://localhost/api*
 
@@ -21,11 +21,11 @@ Create a widget configuration
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.WidgetConfigApi();
+let apiInstance = new ibutsu.WidgetConfigApi();
 let opts = {
-  'widgetConfig': new @IbutsuClient.WidgetConfig() // WidgetConfig | Widget configuration
+  'widgetConfig': new ibutsu.WidgetConfig() // WidgetConfig | Widget configuration
 };
 apiInstance.addWidgetConfig(opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -65,9 +65,9 @@ Delete a widget configuration
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.WidgetConfigApi();
+let apiInstance = new ibutsu.WidgetConfigApi();
 let id = "id_example"; // String | ID of widget configuration to delete
 apiInstance.deleteWidgetConfig(id).then(() => {
   console.log('API called successfully.');
@@ -107,9 +107,9 @@ Get a single widget configuration
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.WidgetConfigApi();
+let apiInstance = new ibutsu.WidgetConfigApi();
 let id = "id_example"; // String | ID of widget config to return
 apiInstance.getWidgetConfig(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -151,9 +151,9 @@ A list of widget configurations
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.WidgetConfigApi();
+let apiInstance = new ibutsu.WidgetConfigApi();
 let opts = {
   'filter': ["null"], // [String] | Fields to filter by
   'page': 56, // Number | Set the page of items to return, defaults to 1
@@ -199,12 +199,12 @@ Updates a single widget configuration
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.WidgetConfigApi();
+let apiInstance = new ibutsu.WidgetConfigApi();
 let id = "id_example"; // String | ID of widget configuration to update
 let opts = {
-  'widgetConfig': new @IbutsuClient.WidgetConfig() // WidgetConfig | Widget configuration
+  'widgetConfig': new ibutsu.WidgetConfig() // WidgetConfig | Widget configuration
 };
 apiInstance.updateWidgetConfig(id, opts).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@IbutsuClient);
+    factory(root.expect, root.ibutsu);
   }
-}(this, function(expect, @IbutsuClient) {
+}(this, function(expect, ibutsu) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @IbutsuClient.InlineObject1();
+    instance = new ibutsu.InlineObject1();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,13 +50,13 @@
   describe('InlineObject1', function() {
     it('should create an instance of InlineObject1', function() {
       // uncomment below and update the code to test InlineObject1
-      //var instane = new @IbutsuClient.InlineObject1();
-      //expect(instance).to.be.a(@IbutsuClient.InlineObject1);
+      //var instane = new ibutsu.InlineObject1();
+      //expect(instance).to.be.a(ibutsu.InlineObject1);
     });
 
     it('should have the property importFile (base name: "importFile")', function() {
       // uncomment below and update the code to test the property importFile
-      //var instane = new @IbutsuClient.InlineObject1();
+      //var instane = new ibutsu.InlineObject1();
       //expect(instance).to.be();
     });
 

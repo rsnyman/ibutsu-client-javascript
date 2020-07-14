@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@IbutsuClient);
+    factory(root.expect, root.ibutsu);
   }
-}(this, function(expect, @IbutsuClient) {
+}(this, function(expect, ibutsu) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @IbutsuClient.WidgetConfig();
+    instance = new ibutsu.WidgetConfig();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,49 +50,49 @@
   describe('WidgetConfig', function() {
     it('should create an instance of WidgetConfig', function() {
       // uncomment below and update the code to test WidgetConfig
-      //var instane = new @IbutsuClient.WidgetConfig();
-      //expect(instance).to.be.a(@IbutsuClient.WidgetConfig);
+      //var instane = new ibutsu.WidgetConfig();
+      //expect(instance).to.be.a(ibutsu.WidgetConfig);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @IbutsuClient.WidgetConfig();
+      //var instane = new ibutsu.WidgetConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instane = new @IbutsuClient.WidgetConfig();
+      //var instane = new ibutsu.WidgetConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property widget (base name: "widget")', function() {
       // uncomment below and update the code to test the property widget
-      //var instane = new @IbutsuClient.WidgetConfig();
+      //var instane = new ibutsu.WidgetConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property project (base name: "project")', function() {
       // uncomment below and update the code to test the property project
-      //var instane = new @IbutsuClient.WidgetConfig();
+      //var instane = new ibutsu.WidgetConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property weight (base name: "weight")', function() {
       // uncomment below and update the code to test the property weight
-      //var instane = new @IbutsuClient.WidgetConfig();
+      //var instane = new ibutsu.WidgetConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property params (base name: "params")', function() {
       // uncomment below and update the code to test the property params
-      //var instane = new @IbutsuClient.WidgetConfig();
+      //var instane = new ibutsu.WidgetConfig();
       //expect(instance).to.be();
     });
 
     it('should have the property title (base name: "title")', function() {
       // uncomment below and update the code to test the property title
-      //var instane = new @IbutsuClient.WidgetConfig();
+      //var instane = new ibutsu.WidgetConfig();
       //expect(instance).to.be();
     });
 

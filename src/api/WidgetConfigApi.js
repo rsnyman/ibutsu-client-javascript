@@ -19,7 +19,7 @@ import WidgetConfigList from '../model/WidgetConfigList';
 /**
 * WidgetConfig service.
 * @module api/WidgetConfigApi
-* @version 0.1
+* @version 1.0.0
 */
 export default class WidgetConfigApi {
 

@@ -18,7 +18,7 @@ import WidgetTypeList from '../model/WidgetTypeList';
 /**
 * Widget service.
 * @module api/WidgetApi
-* @version 0.1
+* @version 1.0.0
 */
 export default class WidgetApi {
 

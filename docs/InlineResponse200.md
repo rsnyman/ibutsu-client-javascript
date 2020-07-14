@@ -1,4 +1,4 @@
-# @IbutsuClient.InlineResponse200
+# ibutsu.InlineResponse200
 
 ## Properties
 

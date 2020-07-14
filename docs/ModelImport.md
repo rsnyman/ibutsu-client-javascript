@@ -1,4 +1,4 @@
-# @IbutsuClient.ModelImport
+# ibutsu.ModelImport
 
 ## Properties
 

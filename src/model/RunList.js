@@ -18,7 +18,7 @@ import Run from './Run';
 /**
  * The RunList model module.
  * @module model/RunList
- * @version 0.1
+ * @version 1.0.0
  */
 class RunList {
     /**

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Project model module.
  * @module model/Project
- * @version 0.1
+ * @version 1.0.0
  */
 class Project {
     /**

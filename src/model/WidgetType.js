@@ -17,7 +17,7 @@ import WidgetParam from './WidgetParam';
 /**
  * The WidgetType model module.
  * @module model/WidgetType
- * @version 0.1
+ * @version 1.0.0
  */
 class WidgetType {
     /**

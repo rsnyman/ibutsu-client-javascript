@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The ReportParameters model module.
  * @module model/ReportParameters
- * @version 0.1
+ * @version 1.0.0
  */
 class ReportParameters {
     /**

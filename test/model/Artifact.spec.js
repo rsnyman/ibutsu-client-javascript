@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@IbutsuClient);
+    factory(root.expect, root.ibutsu);
   }
-}(this, function(expect, @IbutsuClient) {
+}(this, function(expect, ibutsu) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @IbutsuClient.Artifact();
+    instance = new ibutsu.Artifact();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,31 +50,31 @@
   describe('Artifact', function() {
     it('should create an instance of Artifact', function() {
       // uncomment below and update the code to test Artifact
-      //var instane = new @IbutsuClient.Artifact();
-      //expect(instance).to.be.a(@IbutsuClient.Artifact);
+      //var instane = new ibutsu.Artifact();
+      //expect(instance).to.be.a(ibutsu.Artifact);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @IbutsuClient.Artifact();
+      //var instane = new ibutsu.Artifact();
       //expect(instance).to.be();
     });
 
     it('should have the property resultId (base name: "resultId")', function() {
       // uncomment below and update the code to test the property resultId
-      //var instane = new @IbutsuClient.Artifact();
+      //var instane = new ibutsu.Artifact();
       //expect(instance).to.be();
     });
 
     it('should have the property filename (base name: "filename")', function() {
       // uncomment below and update the code to test the property filename
-      //var instane = new @IbutsuClient.Artifact();
+      //var instane = new ibutsu.Artifact();
       //expect(instance).to.be();
     });
 
     it('should have the property additionalMetadata (base name: "additionalMetadata")', function() {
       // uncomment below and update the code to test the property additionalMetadata
-      //var instane = new @IbutsuClient.Artifact();
+      //var instane = new ibutsu.Artifact();
       //expect(instance).to.be();
     });
 

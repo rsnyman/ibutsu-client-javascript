@@ -1,6 +1,6 @@
 {
   "name": "@ibutsu/client",
-  "version": "0.1",
+  "version": "1.0.0",
   "description": "A Javascript client for the Ibutsu API",
   "license": "MIT",
   "main": "dist/index.js",
@@ -8,6 +8,10 @@
     "build": "babel src -d dist",
     "prepack": "npm run build",
     "test": "mocha --require @babel/register --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ibutsu/ibutsu-client-javascript.git"
   },
   "browser": {
     "fs": false

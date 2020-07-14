@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@IbutsuClient);
+    factory(root.expect, root.ibutsu);
   }
-}(this, function(expect, @IbutsuClient) {
+}(this, function(expect, ibutsu) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @IbutsuClient.GroupList();
+    instance = new ibutsu.GroupList();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,19 +50,19 @@
   describe('GroupList', function() {
     it('should create an instance of GroupList', function() {
       // uncomment below and update the code to test GroupList
-      //var instane = new @IbutsuClient.GroupList();
-      //expect(instance).to.be.a(@IbutsuClient.GroupList);
+      //var instane = new ibutsu.GroupList();
+      //expect(instance).to.be.a(ibutsu.GroupList);
     });
 
     it('should have the property groups (base name: "groups")', function() {
       // uncomment below and update the code to test the property groups
-      //var instane = new @IbutsuClient.GroupList();
+      //var instane = new ibutsu.GroupList();
       //expect(instance).to.be();
     });
 
     it('should have the property pagination (base name: "pagination")', function() {
       // uncomment below and update the code to test the property pagination
-      //var instane = new @IbutsuClient.GroupList();
+      //var instane = new ibutsu.GroupList();
       //expect(instance).to.be();
     });
 

@@ -16,7 +16,7 @@ import ApiClient from '../ApiClient';
 /**
  * The Health model module.
  * @module model/Health
- * @version 0.1
+ * @version 1.0.0
  */
 class Health {
     /**

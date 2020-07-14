@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@IbutsuClient);
+    factory(root.expect, root.ibutsu);
   }
-}(this, function(expect, @IbutsuClient) {
+}(this, function(expect, ibutsu) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @IbutsuClient.ReportParameters();
+    instance = new ibutsu.ReportParameters();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,25 +50,25 @@
   describe('ReportParameters', function() {
     it('should create an instance of ReportParameters', function() {
       // uncomment below and update the code to test ReportParameters
-      //var instane = new @IbutsuClient.ReportParameters();
-      //expect(instance).to.be.a(@IbutsuClient.ReportParameters);
+      //var instane = new ibutsu.ReportParameters();
+      //expect(instance).to.be.a(ibutsu.ReportParameters);
     });
 
     it('should have the property type (base name: "type")', function() {
       // uncomment below and update the code to test the property type
-      //var instane = new @IbutsuClient.ReportParameters();
+      //var instane = new ibutsu.ReportParameters();
       //expect(instance).to.be();
     });
 
     it('should have the property filter (base name: "filter")', function() {
       // uncomment below and update the code to test the property filter
-      //var instane = new @IbutsuClient.ReportParameters();
+      //var instane = new ibutsu.ReportParameters();
       //expect(instance).to.be();
     });
 
     it('should have the property source (base name: "source")', function() {
       // uncomment below and update the code to test the property source
-      //var instane = new @IbutsuClient.ReportParameters();
+      //var instane = new ibutsu.ReportParameters();
       //expect(instance).to.be();
     });
 

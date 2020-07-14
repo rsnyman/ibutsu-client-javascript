@@ -20,15 +20,15 @@
     factory(require('expect.js'), require(process.cwd()+'/src/index'));
   } else {
     // Browser globals (root is window)
-    factory(root.expect, root.@IbutsuClient);
+    factory(root.expect, root.ibutsu);
   }
-}(this, function(expect, @IbutsuClient) {
+}(this, function(expect, ibutsu) {
   'use strict';
 
   var instance;
 
   beforeEach(function() {
-    instance = new @IbutsuClient.ModelImport();
+    instance = new ibutsu.ModelImport();
   });
 
   var getProperty = function(object, getter, property) {
@@ -50,37 +50,37 @@
   describe('ModelImport', function() {
     it('should create an instance of ModelImport', function() {
       // uncomment below and update the code to test ModelImport
-      //var instane = new @IbutsuClient.ModelImport();
-      //expect(instance).to.be.a(@IbutsuClient.ModelImport);
+      //var instane = new ibutsu.ModelImport();
+      //expect(instance).to.be.a(ibutsu.ModelImport);
     });
 
     it('should have the property id (base name: "id")', function() {
       // uncomment below and update the code to test the property id
-      //var instane = new @IbutsuClient.ModelImport();
+      //var instane = new ibutsu.ModelImport();
       //expect(instance).to.be();
     });
 
     it('should have the property status (base name: "status")', function() {
       // uncomment below and update the code to test the property status
-      //var instane = new @IbutsuClient.ModelImport();
+      //var instane = new ibutsu.ModelImport();
       //expect(instance).to.be();
     });
 
     it('should have the property filename (base name: "filename")', function() {
       // uncomment below and update the code to test the property filename
-      //var instane = new @IbutsuClient.ModelImport();
+      //var instane = new ibutsu.ModelImport();
       //expect(instance).to.be();
     });
 
     it('should have the property format (base name: "format")', function() {
       // uncomment below and update the code to test the property format
-      //var instane = new @IbutsuClient.ModelImport();
+      //var instane = new ibutsu.ModelImport();
       //expect(instance).to.be();
     });
 
     it('should have the property runId (base name: "run_id")', function() {
       // uncomment below and update the code to test the property runId
-      //var instane = new @IbutsuClient.ModelImport();
+      //var instane = new ibutsu.ModelImport();
       //expect(instance).to.be();
     });
 

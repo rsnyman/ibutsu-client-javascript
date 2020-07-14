@@ -1,4 +1,4 @@
-# @IbutsuClient.ImportApi
+# ibutsu.ImportApi
 
 All URIs are relative to *http://localhost/api*
 
@@ -18,9 +18,9 @@ Import a file into Ibutsu. This can be either a JUnit XML file, or an Ibutsu arc
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.ImportApi();
+let apiInstance = new ibutsu.ImportApi();
 let importFile = "/path/to/file"; // File | The file to import
 apiInstance.addImport(importFile).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -60,9 +60,9 @@ Get the status of an import
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.ImportApi();
+let apiInstance = new ibutsu.ImportApi();
 let id = "id_example"; // String | The ID of the import
 apiInstance.getImport(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);

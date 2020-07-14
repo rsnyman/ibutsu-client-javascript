@@ -18,7 +18,7 @@ import Report from './Report';
 /**
  * The ReportList model module.
  * @module model/ReportList
- * @version 0.1
+ * @version 1.0.0
  */
 class ReportList {
     /**

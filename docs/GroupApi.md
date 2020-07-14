@@ -1,4 +1,4 @@
-# @IbutsuClient.GroupApi
+# ibutsu.GroupApi
 
 All URIs are relative to *http://localhost/api*
 
@@ -20,10 +20,10 @@ Create a new group
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.GroupApi();
-let group = new @IbutsuClient.Group(); // Group | The group
+let apiInstance = new ibutsu.GroupApi();
+let group = new ibutsu.Group(); // Group | The group
 apiInstance.addGroup(group).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
@@ -62,9 +62,9 @@ Get a group
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.GroupApi();
+let apiInstance = new ibutsu.GroupApi();
 let id = "id_example"; // String | The ID of the group
 apiInstance.getGroup(id).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
@@ -104,9 +104,9 @@ Get a list of groups
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.GroupApi();
+let apiInstance = new ibutsu.GroupApi();
 let opts = {
   'page': 56, // Number | Set the page of items to return, defaults to 1
   'pageSize': 56 // Number | Set the number of items per page, defaults to 25
@@ -150,11 +150,11 @@ Update a group
 ### Example
 
 ```javascript
-import @IbutsuClient from '@ibutsu/client';
+import ibutsu from '@ibutsu/client';
 
-let apiInstance = new @IbutsuClient.GroupApi();
+let apiInstance = new ibutsu.GroupApi();
 let id = "id_example"; // String | The ID of the group
-let group = new @IbutsuClient.Group(); // Group | The updated group
+let group = new ibutsu.Group(); // Group | The updated group
 apiInstance.updateGroup(id, group).then((data) => {
   console.log('API called successfully. Returned data: ' + data);
 }, (error) => {
