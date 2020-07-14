@@ -92,7 +92,7 @@ rm -fr node_modules
 # Generate the client
 echo -n "Generating client..."
 openapi-generator-cli generate -o /tmp/client -g javascript --package-name @ibutsu/client \
-    -p licenseName=MIT -p projectVersion=1.0.0  -p projectName=@ibutsu/client \
+    -p licenseName=MIT -p projectVersion=$NEW_VERSION  -p projectName=@ibutsu/client \
     -p projectDescription="A Javascript client for the Ibutsu API" -p usePromises=true \
     -p moduleName=ibutsu -i $OPENAPI_FILE > $CLIENT_DIR/generate.log 2>&1
 if [ $? -ne 0 ]; then
@@ -108,9 +108,10 @@ echo "$TRAVIS_DIFF" | patch -p 1 -d /tmp/client
 echo "$PACKAGE_DIFF" | patch -p 1 -d /tmp/client
 
 # Copy all the files
-find $CLIENT_DIR -not -path $CLIENT_DIR -not -path "$CLIENT_DIR/.git/*" -not -name '.git' \
-    -not -name 'regenerate-client.sh' -not -name 'LICENSE' -not -name '.gitignore' \
-    -not -name 'npm-publish.yml' -not -path '.github' -exec rm -fr {} +
+find $CLIENT_DIR -not -path $CLIENT_DIR -not -path "$CLIENT_DIR/.git/*" \
+    -not -name '.git' -not -path "$CLIENT_DIR/.github/*" -not -name '.github' \
+    -not -name '.gitignore' -not -name 'regenerate-client.sh' -not -name 'LICENSE' \
+    -exec rm -fr {} +
 cp -r /tmp/client/. $CLIENT_DIR
 
 # Clean up afterward
